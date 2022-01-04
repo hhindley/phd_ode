@@ -15,7 +15,7 @@ function monodCurve(nutrient, tspan)
     species = [:cr, :em, :cp, :cq, :ct, :et, :cm, :mt, :mm, :q, :p, :si, :mq, :mp, :mr, :r, :a]
 
     for i in nutrient
-        global s0 = i
+        # global s0 = i
         params[8] = i
         
         prob = ODEProblem(odemodel!,init,tspan,params)

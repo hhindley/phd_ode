@@ -28,7 +28,7 @@ function SSinitVals()
     ssinit = [sscr, ssem, sscp, sscq, ssct, sset, sscm, ssmt, ssmm, ssq, ssp, sssi, ssmq, ssmp, ssmr, ssr, ssa, sszmr, sszmp, sszmq, sszmt, sszmm]
     return ssinit
 end
-SSinitVals
+
 function calcGrowthrate(systemState)
     Kgamma = gmax/Kp
     a = systemState[:a]
@@ -38,6 +38,6 @@ function calcGrowthrate(systemState)
 end
 
 function calcRMF(systemState)
-	rmf = nr*sum(systemState[[:r, :cr, :cp, :ct, :cm, :cq, :zmr, :zmp, :zmt, :zmm, :zmq]]) / nr*sum(systemState[[:r, :cr, :cp, :ct, :cm, :cq, :zmr, :zmp, :zmt, :zmm, :zmq]]) + nx*sum(systemState[[:p, :q, :et, :em]])
+	rmf = nr*sum(systemState[[:r, :cr, :cp, :ct, :cm, :cq, :zmr, :zmp, :zmt, :zmm, :zmq]]) / (nr*sum(systemState[[:r, :cr, :cp, :ct, :cm, :cq, :zmr, :zmp, :zmt, :zmm, :zmq]]) + nx*sum(systemState[[:p, :q, :et, :em]]))
     return rmf
 end

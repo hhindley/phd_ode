@@ -9,7 +9,7 @@ function initial_model(model, initvals, params)
     prob = ODEProblem(model, initvals, tspan, params)
     sol = solve(prob, alg_hints=[:stiff])
 end
-solution = initial_model(odemodel!, init, params_init)  
+solution = initial_model(odemodelfull!, initfull, params_init)  
 plot(solution)
 
 # species = [:cr, :em, :cp, :cq, :ct, :et, :cm, :mt, :mm, :q, :p, :si, :mq, :mp, :mr, :r, :a]
