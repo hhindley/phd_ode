@@ -4,12 +4,12 @@ dm= 0.1
 kb= 1
 ku= 1.0
 f_init= 1 
+global cl= 0
+k_cm= 0.005990373118888
 f = cl*k_cm
 thetar= 426.8693338968694
-k_cm= 0.005990373118888
 global s0= 1e4
 gmax= 1260.0
-global cl= 0
 thetax= 4.379733394834643
 Kt= 1.0e3
 M= 1.0e8
@@ -26,8 +26,8 @@ wp= 0.0
 hq= 4
 nr= 7549.0
 global ns= 0.5
-params_init= [b, dm, kb, ku, f_init, thetar, k_cm, s0, gmax, cl, thetax, Kt, M, we, Km, vm, nx, Kq, Kp, vt, wr, wq, wp, hq, nr, ns]
-params= [b, dm, kb, ku, f, thetar, k_cm, s0, gmax, cl, thetax, Kt, M, we, Km, vm, nx, Kq, Kp, vt, wr, wq, wp, hq, nr, ns]
+params_init= [b, dm, kb, ku, f_init, cl, k_cm, thetar, s0, gmax, thetax, Kt, M, we, Km, vm, nx, Kq, Kp, vt, wr, wq, wp, hq, nr, ns]
+params= [b, dm, kb, ku, cl, k_cm, f, thetar, s0, gmax, thetax, Kt, M, we, Km, vm, nx, Kq, Kp, vt, wr, wq, wp, hq, nr, ns]
 
 
 cr_0= 0.
